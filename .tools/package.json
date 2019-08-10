@@ -11,12 +11,12 @@
     "url": "https://github.com/Shoptet/templates-custom-theme/issues"
   },
   "templates": {
-    "07": "Techno",
-    "09": "Tango",
     "10": "Waltz",
     "11": "Classic",
     "12": "Step",
-    "13": "Disco"
+    "13": "Disco",
+    "07": "Techno",
+    "09": "Tango"
   },
   "javascripts": [
     "../../assets/00/js/modules/jquery.unveil.js",
