@@ -11,6 +11,7 @@ You can use this repository as a boilerplate, you can edit all files **within th
 ## Prerequisites
 
 [NodeJS](https://nodejs.org/)
+
 [GruntJS](https://gruntjs.com/)
 
 ## Creating assets
@@ -70,7 +71,7 @@ For continuous development and compatibility of your themes with Shoptet templat
 **don't ever edit any file in `your_directory/assets/` folder.**
 
 ### Very important notice
-**Really _don't ever edit any file in this `your_directory/assets/` folder_.**
+**Really _don't ever edit any file in `your_directory/assets/` folder_.**
 
 ### Examples
 
@@ -116,9 +117,7 @@ Update `your_directory/theme/.tools/Gruntfile.js`
 
 Now recompile your CSS by `grunt` command and upload it to FTP.
 
-By this pattern you can update also other CSS files.
-
-### About files used in Shoptet template
+By this pattern you can update also other CSS files:
 
 * `main.css` is used for layout
 * `project.css` is used for colors
