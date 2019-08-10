@@ -1,4 +1,4 @@
-# Custom theme for Shoptet templates
+# Custom theme for [Shoptet](https://www.shoptet.cz/) templates
 
 When the **blank mode** is enabled, no CSS nor JavaScript files are served by our servers.
 With this tools you can simply create all necessary assets for fully functioning Shoptet e-shop template.
@@ -17,10 +17,10 @@ You can use this repository as a boilerplate, you can edit all files **within th
 ## Creating assets
 
 ```shell
-$ npm install -g grunt-cli
-$ cd your_directory
-$ git clone git@github.com:Shoptet/templates-assets.git assets
-$ git clone git@github.com:Shoptet/templates-custom-theme.git theme
+npm install -g grunt-cli
+cd your_directory
+git clone git@github.com:Shoptet/templates-assets.git assets
+git clone git@github.com:Shoptet/templates-custom-theme.git theme
 cd theme
 npm install
 grunt
@@ -58,45 +58,36 @@ Don't forget to replace `classic.shoptet.cz` by URL of your e-shop.
 <script src="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/build.min.js">
 ```
 
-That's all - now you have e-shop with enabled blank mode, which looks exactly same
-(only webfonts are intentionally replaced by normal fonts) like it wasn't enabled.
+That's all - now you have e-shop in blank mode, looking exactly same like in standard mode
+(only web fonts are intentionally replaced by normal fonts).
 It's up to you to make it differ.
 
 ## How to make custom change in theme
 
 ### Important notice
 
-For continuous development and compatibility of your themes with Shoptet templates
+For continuous development and compatibility of your themes with Shoptet templates,
 **don't ever edit any file in `your_directory/assets/` folder.**
 
 ### Very important notice
 **Really _don't ever edit any file in `your_directory/assets/` folder_.**
 
-### Examples
-
-Very first step before any update of custom theme has to be:
+### Example - change primary color of template
 
 ```shell
-$ cd your_directory/assets
-$ git pull
+cd your_directory/theme
+touch project-custom.less
+touch project-variables-custom.less
 ```
 
-#### Change primary color of template
-
-```shell
-$ cd your_directory/theme
-$ touch project_custom.less
-$ touch project_variables_custom.less
-```
-
-Content of `project_custom.less`
+Content of `project-custom.less`
 ```less
 @import '../assets/11/css/project';
-@import 'project_variables_custom';
+@import 'project-variables-custom';
 ```
 
 
-Content of `project_variables_custom.less`
+Content of `project-variables-custom.less`
 ```less
 @colorPrimary: orangered;
 ```
@@ -107,7 +98,7 @@ Update `your_directory/theme/Gruntfile.js`
                  },
                  files: {
 -                    'dist/project.css': '../assets/' + templateNumber + '/css/project.less'
-+                    'dist/project.css': 'project_custom.less'
++                    'dist/project.css': 'project-custom.less'
                  }
              },
              font: {

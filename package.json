@@ -1,6 +1,6 @@
 {
   "name": "shoptet-template",
-  "version": "0.1.1",
+  "version": "0.1.11",
   "author": "Václav Vracovský, https://www.shoptet.cz/",
   "license": "MIT",
   "repository": {
@@ -11,12 +11,30 @@
     "url": "https://github.com/Shoptet/templates-custom-theme/issues"
   },
   "templates": {
-    "10": "Waltz",
-    "11": "Classic",
-    "12": "Step",
-    "13": "Disco",
-    "07": "Techno",
-    "09": "Tango"
+    "10": {
+      "name": "Waltz",
+      "url": "https://waltz.shoptet.cz/"
+    },
+    "11": {
+      "name": "Classic",
+      "url": "https://classic.shoptet.cz/"
+    },
+    "12": {
+      "name": "Step",
+      "url": "https://step.shoptet.cz/"
+    },
+    "13": {
+      "name": "Disco",
+      "url": "https://disco.shoptet.cz/"
+    },
+    "07": {
+      "name": "Techno",
+      "url": "https://techno.shoptet.cz/"
+    },
+    "09": {
+      "name": "Tango",
+      "url": "https://tango.shoptet.cz/"
+    }
   },
   "javascripts": [
     "../assets/00/js/modules/jquery.unveil.js",

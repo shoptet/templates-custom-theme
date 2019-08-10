@@ -1,7 +1,8 @@
 module.exports = function(grunt) {
     var pkg = grunt.file.readJSON('package.json');
 
-    // Sample is for "11" template, Classic
+    // As example is used "11" template, Classic
+    // For other templates, see "templates" section in package.json
     var templateNumber = '11';
 
     grunt.initConfig({
@@ -71,8 +72,9 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', ['compile-css', 'concat-js', 'uglify-js']);
     grunt.registerTask('compile-css', ['less:mainCss', 'less:projectCss', 'less:font', 'less:print']);
-    grunt.registerTask('compile-print', ['less:print']);
-    grunt.registerTask('compile-font', ['less:font']);
+    grunt.registerTask('compile-screen-css', ['less:mainCss', 'less:projectCss']);
+    grunt.registerTask('compile-print-css', ['less:print']);
+    grunt.registerTask('compile-font-css', ['less:font']);
     grunt.registerTask('concat-js', ['concat:dist']);
     grunt.registerTask('uglify-js', ['uglify:dist']);
 
