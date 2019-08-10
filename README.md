@@ -22,7 +22,6 @@ $ cd your_directory
 $ git clone git@github.com:Shoptet/templates-assets.git assets
 $ git clone git@github.com:Shoptet/templates-custom-theme.git theme
 cd theme
-cd .tools
 npm install
 grunt
 ``` 
@@ -102,13 +101,13 @@ Content of `project_variables_custom.less`
 @colorPrimary: orangered;
 ```
 
-Update `your_directory/theme/.tools/Gruntfile.js`
+Update `your_directory/theme/Gruntfile.js`
 ```diff
                      compress: true,
                  },
                  files: {
--                    '../dist/project.css': '../../assets/' + templateNumber + '/css/project.less'
-+                    '../dist/project.css': '../project_custom.less'
+-                    'dist/project.css': '../assets/' + templateNumber + '/css/project.less'
++                    'dist/project.css': 'project_custom.less'
                  }
              },
              font: {

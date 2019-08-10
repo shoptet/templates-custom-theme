@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     compress: true,
                 },
                 files: {
-                    '../dist/main.css': '../../assets/' + templateNumber + '/css/main.less'
+                    'dist/main.css': '../assets/' + templateNumber + '/css/main.less'
                 }
             },
             projectCss: {
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
                     compress: true,
                 },
                 files: {
-                    '../dist/project.css': '../../assets/' + templateNumber + '/css/project.less'
+                    'dist/project.css': '../assets/' + templateNumber + '/css/project.less'
                 }
             },
             font: {
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                     }
                 },
                 files: {
-                    '../dist/font-shoptet.css': '../../assets/' + templateNumber + '/css/font-shoptet.less',
+                    'dist/font-shoptet.css': '../assets/' + templateNumber + '/css/font-shoptet.less',
                 }
             },
             print: {
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
                     compress: true,
                 },
                 files: {
-                    '../dist/print.css': '../../assets/' + templateNumber + '/css/print.less',
+                    'dist/print.css': '../assets/' + templateNumber + '/css/print.less',
                 }
             }
         },
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: pkg.javascripts,
-                dest: '../dist/build.js',
+                dest: 'dist/build.js',
             },
         },
         uglify: {
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    '../dist/build.min.js': ['../dist/build.js']
+                    'dist/build.min.js': ['dist/build.js']
                 }
             }
         }
