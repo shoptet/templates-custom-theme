@@ -1,6 +1,6 @@
 # Custom theme for [Shoptet](https://www.shoptet.cz/) templates
 
-When the **blank mode** is enabled, no CSS nor JavaScript files are served by our servers.
+When the **blank mode** is enabled, no CSS nor JavaScript files are served by [Shoptet](https://www.shoptet.cz/) servers.
 With this tools you can simply create all necessary assets for fully functioning Shoptet e-shop template.
 
 You can use this repository as a boilerplate, you can edit all files **within this repository** as you want:
