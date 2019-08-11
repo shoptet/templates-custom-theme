@@ -76,32 +76,40 @@ For continuous development and compatibility of your themes with Shoptet templat
 
 ```shell
 cd your_directory/theme
-touch project-custom.less
 touch project-variables-custom.less
+touch project-custom.less
+touch userConfig.json
 ```
 
-Content of `project-custom.less`
+We need to set new value to `@colorPrimary` variable in
+`project-variables-custom.less`:
+
+```less
+@colorPrimary: orangered;
+```
+
+Then we need to load original project files along with
+our newly set variable in `project-custom.less`:
+
 ```less
 @import '../assets/11/css/project';
 @import 'project-variables-custom';
 ```
 
+And finally we have to use our custom file in build process -
+this is what the `userConfig.json` does:
 
-Content of `project-variables-custom.less`
-```less
-@colorPrimary: orangered;
-```
-
-Update `your_directory/theme/Gruntfile.js`
-```diff
-                     compress: true,
-                 },
-                 files: {
--                    'dist/project.css': '../assets/' + templateNumber + '/css/project.less'
-+                    'dist/project.css': 'project-custom.less'
-                 }
-             },
-             font: {
+```json
+{
+  "projectCss": {
+    "options": {
+      "compress": true
+    },
+    "files": {
+      "dist/project.css": "project-custom.less"
+    }
+  }
+}
 
 ```
 

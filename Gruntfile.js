@@ -1,67 +1,38 @@
 module.exports = function(grunt) {
     var pkg = grunt.file.readJSON('package.json');
-
-    // As example is used "11" template, Classic
-    // For other templates, see "templates" section in package.json
-    var templateNumber = '11';
+    var cfg = grunt.file.exists('userConfig.json') ? grunt.file.readJSON('userConfig.json') : {};
+    pkg = {...pkg, ...cfg};
 
     grunt.initConfig({
         less: {
             mainCss: {
-                options: {
-                    javascriptEnabled: true,
-                    compress: true,
-                },
-                files: {
-                    'dist/main.css': '../assets/' + templateNumber + '/css/main.less'
-                }
+                options: pkg.mainCss.options,
+                files: pkg.mainCss.files
             },
             projectCss: {
-                options: {
-                    javascriptEnabled: true,
-                    compress: true,
-                },
-                files: {
-                    'dist/project.css': '../assets/' + templateNumber + '/css/project.less'
-                }
+                options: pkg.projectCss.options,
+                files: pkg.projectCss.files
             },
-            font: {
-                options: {
-                    compress: true,
-                    modifyVars: {
-                        fontPath: './',
-                    }
-                },
-                files: {
-                    'dist/font-shoptet.css': '../assets/' + templateNumber + '/css/font-shoptet.less',
-                }
+            fontCss: {
+                options: pkg.fontCss.options,
+                files: pkg.fontCss.files
             },
-            print: {
-                options: {
-                    compress: true,
-                },
-                files: {
-                    'dist/print.css': '../assets/' + templateNumber + '/css/print.less',
-                }
+            printCss: {
+                options: pkg.printCss.options,
+                files: pkg.printCss.files
             }
         },
         concat: {
-            options: {
-                separator: ';',
-            },
+            options: pkg.concatJS.options,
             dist: {
-                src: pkg.javascripts,
-                dest: 'dist/build.js',
+                src: pkg.concatJS.src,
+                dest: pkg.concatJS.dest,
             },
         },
         uglify: {
-            options: {
-                mangle: false,
-            },
+            options: pkg.uglifyJS.options,
             dist: {
-                files: {
-                    'dist/build.min.js': ['dist/build.js']
-                }
+                files: pkg.uglifyJS.files
             }
         }
     });
@@ -71,10 +42,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', ['compile-css', 'concat-js', 'uglify-js']);
-    grunt.registerTask('compile-css', ['less:mainCss', 'less:projectCss', 'less:font', 'less:print']);
+    grunt.registerTask('compile-css', ['less:mainCss', 'less:projectCss', 'less:fontCss', 'less:printCss']);
     grunt.registerTask('compile-screen-css', ['less:mainCss', 'less:projectCss']);
-    grunt.registerTask('compile-print-css', ['less:print']);
-    grunt.registerTask('compile-font-css', ['less:font']);
+    grunt.registerTask('compile-print-css', ['less:printCss']);
+    grunt.registerTask('compile-font-css', ['less:fontCss']);
     grunt.registerTask('concat-js', ['concat:dist']);
     grunt.registerTask('uglify-js', ['uglify:dist']);
 
