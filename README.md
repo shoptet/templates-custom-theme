@@ -1,12 +1,12 @@
 # Custom theme for [Shoptet](https://www.shoptet.cz/) templates
 
 When the **blank mode** is enabled, no CSS nor JavaScript files are served by [Shoptet](https://www.shoptet.cz/) servers.
-With this tools you can simply create all necessary assets for fully functioning Shoptet e-shop template.
+With this tools you can simply create all necessary assets for fully functioning [Shoptet](https://www.shoptet.cz/) e-shop template.
 
-You can use this repository as a boilerplate, you can edit all files **within this repository** as you want:
-* you can update Gruntfile to your needs or create your own
+* you can create `userConfig.json` and use it as described in example below
 * you can use Gulp or other automation tool
-* you don't have to use none of them and compile files directly from command line/editor 
+* you don't have to use Grunt nor Gulp and compile files directly from command line/editor
+* but, first of all, you can use this repository as a inspiration
 
 ## Prerequisites
 
@@ -66,7 +66,7 @@ It's up to you to make it differ.
 
 ### Important notice
 
-For continuous development and compatibility of your themes with Shoptet templates,
+For continuous development and compatibility of your themes with [Shoptet](https://www.shoptet.cz/) templates,
 **don't ever edit any file in `your_directory/assets/` folder.**
 
 ### Very important notice
