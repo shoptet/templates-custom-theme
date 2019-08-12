@@ -1,7 +1,7 @@
 # Custom theme for [Shoptet](https://www.shoptet.cz/) templates
 
-When the **blank mode** is enabled, no CSS nor JavaScript files are served by [Shoptet](https://www.shoptet.cz/) servers.
-With this tools you can simply create all necessary assets for fully functioning [Shoptet](https://www.shoptet.cz/) e-shop template.
+When the **blank mode** is enabled, no CSS neihter JavaScript files are served by [Shoptet](https://www.shoptet.cz/) servers.
+With this tools you can simply create all necessary assets for fully functioning [Shoptet](https://www.shoptet.cz/) online store template.
 
 * you can create `userConfig.json` and use it as described in example below
 * you can use Gulp or other automation tool
@@ -44,7 +44,7 @@ e.g. `your_directory/assets/11/fonts/shoptet/`
 ## Include assets in your admin
 
 Go to **HTML codes** page in your admin and paste following code there.
-Don't forget to replace `classic.shoptet.cz` by URL of your e-shop.
+Don't forget to replace `classic.shoptet.cz` by URL of your online store.
 
 ### Header section
 ```html
@@ -58,7 +58,7 @@ Don't forget to replace `classic.shoptet.cz` by URL of your e-shop.
 <script src="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/build.min.js">
 ```
 
-That's all - now you have e-shop in blank mode, looking exactly same like in standard mode
+That's all - now you have online store in blank mode, looking exactly same like in standard mode
 (only web fonts are intentionally replaced by normal fonts).
 It's up to you to make it differ.
 
@@ -120,4 +120,4 @@ By this pattern you can update also other CSS files:
 * `main.css` is used for layout
 * `project.css` is used for colors
 * `font-shoptet.css` is used for icon font
-* `build.min.js` contains all necessary JavaScript files that e-shop needs to work properly 
+* `build.min.js` contains all necessary JavaScript files that online store needs to work properly 
