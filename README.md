@@ -33,13 +33,13 @@ Your assets are now ready in `your_directory/theme/dist` folder.
 Upload following files to FTP to folder `assets`:
 
 *  `your_directory/theme/dist/main.css`
-*  `your_directory/theme/dist/project.css`
-*  `your_directory/theme/dist/font-shoptet.css`
-*  `your_directory/theme/dist/print.css`
 *  `your_directory/theme/dist/build.min.js`
 
-Also upload `shoptet.svg`, `shoptet.ttf` and `shoptet.woff` from template you are using,
+Also upload:
+
+* `shoptet.svg`, `shoptet.ttf` and `shoptet.woff` from template you are using,
 e.g. `your_directory/assets/11/fonts/shoptet/`
+* folder `your_directory/assets/00/img`
 
 ## Include assets in your admin
 
@@ -49,9 +49,6 @@ Don't forget to replace `classic.shoptet.cz` by URL of your online store.
 ### Header section
 ```html
 <link rel="stylesheet" href="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/main.css">
-<link rel="stylesheet" href="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/project.css">
-<link rel="stylesheet" href="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/font-shoptet.css">
-<link rel="stylesheet" href="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/print.css">
 ```
 ### Footer section
 ```html
@@ -101,13 +98,13 @@ this is what the `userConfig.json` does:
 
 ```json
 {
-  "projectCss": {
-    "options": {
-      "compress": true
-    },
-    "files": {
-      "dist/project.css": "project-custom.less"
-    }
+  "css": {
+    "dist/main.css": [
+        "../assets/11/css/main.less",
+        "../assets/11/css/project.less",
+        "../assets/11/css/font-shoptet.less",
+        "project-custom.less"
+      ]
   }
 }
 
@@ -115,9 +112,14 @@ this is what the `userConfig.json` does:
 
 Now recompile your CSS by `grunt` command and upload it to FTP.
 
-By this pattern you can update also other CSS files:
+### About source LESS files
 
-* `main.css` is used for layout
-* `project.css` is used for colors
-* `font-shoptet.css` is used for icon font
-* `build.min.js` contains all necessary JavaScript files that online store needs to work properly 
+* `main.less` is used for layout
+* `project.less` is used for colors
+* `font-shoptet.less` is used for  Shoptet icon font
+
+### About source JavaScript files
+
+Section `concatJS.src` of `package.json` contains all JavaScript files
+that online store needs to work properly. By default are compiled to
+`build.min.js`. 

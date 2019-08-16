@@ -36,40 +36,21 @@
       "url": "https://tango.shoptet.cz/"
     }
   },
-  "mainCss": {
+  "css": {
     "options": {
       "javascriptEnabled": true,
-      "compress": true
-    },
-    "files": {
-      "dist/main.css": "../assets/11/css/main.less"
-    }
-  },
-  "projectCss": {
-    "options": {
-      "compress": true
-    },
-    "files": {
-      "dist/project.css": "../assets/11/css/project.less"
-    }
-  },
-  "fontCss": {
-    "options": {
       "compress": true,
       "modifyVars": {
-        "fontPath": "./"
+        "fontPath": "./",
+        "imgPath": "./"
       }
     },
     "files": {
-      "dist/font-shoptet.css": "../assets/11/css/font-shoptet.less"
-    }
-  },
-  "printCss": {
-    "options": {
-      "compress": true
-    },
-    "files": {
-      "dist/print.css": "../assets/11/css/print.less"
+      "dist/main.css": [
+        "../assets/11/css/main.less",
+        "../assets/11/css/project.less",
+        "../assets/11/css/font-shoptet.less"
+      ]
     }
   },
   "concatJS": {
@@ -135,7 +116,9 @@
       "mangle": false
     },
     "files": {
-      "dist/build.min.js": ["dist/build.js"]
+      "dist/build.min.js": [
+        "dist/build.js"
+      ]
     }
   },
   "devDependencies": {
