@@ -101,9 +101,8 @@ this is what the `userConfig.json` does:
   "css": {
     "dist/main.css": [
         "../assets/11/css/main.less",
-        "../assets/11/css/project.less",
-        "../assets/11/css/font-shoptet.less",
-        "project-custom.less"
+        "project-custom.less",
+        "../assets/11/css/font-shoptet.less"
       ]
   }
 }
