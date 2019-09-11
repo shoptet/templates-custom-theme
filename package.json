@@ -41,8 +41,8 @@
       "javascriptEnabled": true,
       "compress": true,
       "modifyVars": {
-        "fontPath": "./",
-        "imgPath": "./"
+        "fontPath": "./fonts/",
+        "imgPath": "./img/"
       }
     },
     "files": {
@@ -77,10 +77,11 @@
       "../assets/00/js/jqueryui/slider.js",
       "../assets/00/js/modules/jquery.ui.touch-punch.js",
       "../assets/00/js/modules/jquery.colorbox.js",
-      "../assets/libs/jquery-ajax-response/jquery.ajax.response.js",
+      "../assets/libs/jquery.ajax.response.js",
       "../assets/libs/polyfills.js",
       "../assets/libs/scripts.js",
       "../assets/libs/dev.js",
+      "../assets/libs/common.js",
       "../assets/libs/cookie.js",
       "../assets/libs/helpers.js",
       "../assets/libs/tracking.js",
@@ -89,6 +90,7 @@
       "../assets/libs/variants/common.js",
       "../assets/libs/variants/simple.js",
       "../assets/libs/variants/split.js",
+      "../assets/libs/variants/unavailable.js",
       "../assets/libs/ajax.js",
       "../assets/libs/cart.js",
       "../assets/libs/phoneInput.js",
