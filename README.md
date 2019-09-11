@@ -38,7 +38,7 @@ Upload following files to FTP to folder `assets`:
 Also upload:
 
 * `shoptet.svg`, `shoptet.ttf` and `shoptet.woff` from template you are using,
-e.g. `your_directory/assets/11/fonts/shoptet/`
+e.g. `your_directory/assets/11/fonts/shoptet/` to folder `fonts`
 * folder `your_directory/assets/00/img`
 
 ## Include assets in your admin
