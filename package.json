@@ -41,7 +41,7 @@
       "javascriptEnabled": true,
       "compress": true,
       "modifyVars": {
-        "fontPath": "./fonts/",
+        "fontPath": "./fonts/shoptet/",
         "imgPath": "./img/"
       }
     },
@@ -49,7 +49,7 @@
       "dist/main.css": [
         "../assets/11/css/main.less",
         "../assets/11/css/project.less",
-        "../assets/11/css/font-shoptet.less"
+        "../assets/11/css/modules/font-shoptet.less"
       ]
     }
   },
