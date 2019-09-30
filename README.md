@@ -1,6 +1,6 @@
 # Custom theme for [Shoptet](https://www.shoptet.cz/) templates
 
-When the **blank mode** is enabled, no CSS neihter JavaScript files are served by [Shoptet](https://www.shoptet.cz/) servers.
+When the **blank mode** is enabled, no CSS neither JavaScript files are served by [Shoptet](https://www.shoptet.cz/) servers.
 With this tools you can simply create all necessary assets for fully functioning [Shoptet](https://www.shoptet.cz/) online store template.
 
 * you can create `userConfig.json` and use it as described in example below
