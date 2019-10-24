@@ -34,11 +34,13 @@ Upload following files to FTP to folder `assets`:
 
 *  `your_directory/theme/dist/main.css`
 *  `your_directory/theme/dist/build.min.js`
+* resulting path would be e.g. `user/assets/main.css` 
 
-Also upload:
+To folder `assets` also upload:
 
 * `shoptet.svg`, `shoptet.ttf` and `shoptet.woff` from template you are using,
 e.g. `your_directory/assets/11/fonts/shoptet/` to folder `fonts`
+* resulting path would be e.g. `user/assets/fonts/shoptet/shoptet.svg`
 * folder `your_directory/assets/00/img`
 
 ## Include assets in your admin
