@@ -10,19 +10,44 @@ With this tools you can simply create all necessary assets for fully functioning
 
 ## Prerequisites
 
-[NodeJS](https://nodejs.org/)
+Ensure that you have installed [NodeJS](https://nodejs.org/).
 
-[GruntJS](https://gruntjs.com/)
+There are many ways how to create assets, in this example is used
+[GruntJS](https://gruntjs.com/) to generate them.
 
 ## Creating assets
 
+Install Grunt command line interface, which you need to access build tools.
+You have to execute this command only for the first time, then it's unnecessary.
 ```shell
 npm install -g grunt-cli
+``` 
+
+Move to directory, where you want to create your assets.
+In this example is called `your_directory`.
+```shell
 cd your_directory
+``` 
+
+Clone necessary repositories from GitHub.
+```shell
 git clone git@github.com:Shoptet/templates-assets.git assets
 git clone git@github.com:Shoptet/templates-custom-theme.git theme
+``` 
+
+Move to directory `theme`, where the build tools are prepared.
+```shell
 cd theme
+``` 
+
+Install necessary modules to make build tools working.
+You have to do it only for the first time.
+```shell
 npm install
+``` 
+
+Finally, create the assets itself.
+```shell
 grunt
 ``` 
 
