@@ -59,13 +59,13 @@ Upload following files to FTP to folder `assets`:
 
 *  `your_directory/theme/dist/main.css`
 *  `your_directory/theme/dist/build.min.js`
-* resulting path would be e.g. `user/assets/main.css` 
+* resulting path would be e.g. `user/documents/assets/main.css` 
 
 To folder `assets` also upload:
 
 * `shoptet.svg`, `shoptet.ttf` and `shoptet.woff` from template you are using,
 e.g. `your_directory/assets/11/fonts/shoptet/` to folder `fonts`
-* resulting path would be e.g. `user/assets/fonts/shoptet/shoptet.svg`
+* resulting path would be e.g. `user/documents/assets/fonts/shoptet/shoptet.svg`
 * folder `your_directory/assets/00/img`
 
 ## Include assets in your admin
@@ -75,11 +75,11 @@ Don't forget to replace `classic.shoptet.cz` by URL of your online store.
 
 ### Header section
 ```html
-<link rel="stylesheet" href="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/main.css">
+<link rel="stylesheet" href="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/documents/assets/main.css">
 ```
 ### Footer section
 ```html
-<script src="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/assets/build.min.js">
+<script src="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/documents/assets/build.min.js">
 ```
 
 That's all - now you have online store in blank mode, looking exactly same like in standard mode
