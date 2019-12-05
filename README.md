@@ -82,14 +82,12 @@ Don't forget to replace `classic.shoptet.cz` by URL of your online store.
 <script src="https://cdn.myshoptet.com/usr/classic.shoptet.cz/user/documents/assets/build.min.js">
 ```
 
-#### ❗️ Use Shoptet CDN
-Because of high speed caches of Shoptet CDN, it is strongly recommended to use Shoptet CDN for your
-assets. Please include your assets in this format: `https://cdn.myshoptet.com/usr/YOUR_WEB/user/documents/assets/YOUR_ASSETS`.
-
-
 That's all - now you have online store in blank mode, looking exactly same like in standard mode
 (only web fonts are intentionally replaced by normal fonts).
 It's up to you to make it differ.
+
+> ❗️ Because of high speed cache of Shoptet CDN, it is **strongly recommended to use Shoptet CDN** for your assets.
+> Ever include your assets in this format: `https://cdn.myshoptet.com/usr/YOUR_WEB/user/documents/assets/YOUR_ASSETS`.
 
 ## How to make custom change in theme
 
