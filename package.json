@@ -1,6 +1,6 @@
 {
   "name": "shoptet-template",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "author": "Václav Vracovský, https://www.shoptet.cz/",
   "license": "MIT",
   "repository": {
@@ -78,7 +78,6 @@
       "../assets/00/js/modules/jquery.ui.touch-punch.js",
       "../assets/00/js/modules/jquery.colorbox.js",
       "../assets/00/js/libs/jquery.ajax.response.js",
-      "../assets/00/js/libs/polyfills.js",
       "../assets/00/js/libs/scripts.js",
       "../assets/00/js/libs/dev.js",
       "../assets/00/js/libs/common.js",
@@ -93,6 +92,7 @@
       "../assets/00/js/libs/variants/unavailable.js",
       "../assets/00/js/libs/ajax.js",
       "../assets/00/js/libs/cart.js",
+      "../assets/00/js/libs/cofidis.js",
       "../assets/00/js/libs/phoneInput.js",
       "../assets/00/js/libs/validator/validator.js",
       "../assets/00/js/libs/validator/phone.js",
