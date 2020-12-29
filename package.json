@@ -119,6 +119,7 @@
       "../assets/00/js/modules/search.js",
       "../assets/00/js/modules/filters.js",
       "../assets/00/js/modules/productInnerSecondImage.js",
+      "../assets/00/js/modules/smartLabels.js",
       "../assets/00/js/libs/checkout.js",
       "../assets/00/js/modules/twisto.js"
     ],
