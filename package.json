@@ -121,6 +121,7 @@
       "../assets/00/js/modules/productInnerSecondImage.js",
       "../assets/00/js/modules/smartLabels.js",
       "../assets/00/js/libs/checkout.js",
+      "../assets/00/js/libs/checkoutShared.js",
       "../assets/00/js/modules/twisto.js"
     ],
     "dest": "dist/build.js"
