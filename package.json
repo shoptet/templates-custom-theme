@@ -81,6 +81,7 @@
       "../assets/shared/js/libs/dev.js",
       "../assets/shared/js/libs/custom.js",
       "../assets/shared/js/libs/config.js",
+      "../assets/shared/js/libs/consent.js",
       "../assets/shared/js/libs/runtime.js",
       "../assets/shared/js/libs/modal.js",
       "../assets/shared/js/libs/common.js",
